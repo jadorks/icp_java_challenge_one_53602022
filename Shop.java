@@ -14,6 +14,6 @@ public class Shop{
         System.out.println("Enter price of product");
         double price = input.nextDouble();
 
-        
+        Product shopProduct = new Product(name, quantity, price);
     }
 }
