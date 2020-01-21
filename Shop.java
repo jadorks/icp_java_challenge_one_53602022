@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
 
 public class Shop{
 
@@ -15,5 +18,26 @@ public class Shop{
         double price = input.nextDouble();
 
         Product shopProduct = new Product(name, quantity, price);
+
+        writeToFile(shopProduct);
+    }
+
+    public static void writeToFile(Product p){
+        String item = p.getItem();
+        int quantity = p.getQuantity();
+        double price = p.getPrice();
+
+        PrintWriter printWriter = null;
+
+        try {
+            printWriter = new PrintWriter(new FileOutputStream("essentials_stock.txt",true));
+        } catch (FileNotFoundException e) {
+            e.getMessage();
+        }
+
+        printWriter.printf(item + ", " +quantity + ", GHC %.2f", price);
+        printWriter.println();
+
+        printWriter.close();
     }
 }
