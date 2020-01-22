@@ -1,0 +1,10 @@
+Margarine, 20, GHC 10.00
+Kurl-out, 30, GHC 5.00
+U2 Iodated Salt, 30, GHC 2.00
+Mentos, 50, GHC 2.50
+Rose Buns, 30, GHC 5.00
+Voltic Water, 50, GHC 2.50
+Vaseline, 50, GHC 10.00
+Staples, 40, GHC 10.00
+Bel-Aqua, 100, GHC 20.00
+Extension Board, 20, GHC 30.00
